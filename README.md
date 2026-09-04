@@ -4,6 +4,8 @@ Deployment & Hosting: Vom Laptop zur Live-App
 
 ---
 
+
+
 ## Voraussetzungen
 
 - [Node.js](https://nodejs.org/) installiert (Version 18.17 oder höher)
