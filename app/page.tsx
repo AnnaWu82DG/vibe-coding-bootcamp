@@ -1,17 +1,21 @@
-import Welcome from "@/components/Welcome";
-import ShimmerQuote from "@/components/ShimmerQuote";
-import BootcampFooter from "@/components/BootcampFooter";
-
-export default function Home() {
-  const motto = process.env.NEXT_PUBLIC_MOTTO;
-
-  return (
-    <main className="min-h-screen flex flex-col">
-      <div className="flex-1 flex items-center justify-center px-6">
-        {motto ? <ShimmerQuote text={motto} /> : <Welcome />}
-      </div>
-
-      <BootcampFooter />
-    </main>
-  );
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [{ "name": "next" }],
+    "paths": { "@/*": ["./*"] }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"]
 }
