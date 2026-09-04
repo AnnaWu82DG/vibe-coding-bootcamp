@@ -4,7 +4,7 @@ import BootcampFooter from "@/components/BootcampFooter";
 
 export default function Home() {
   const motto = process.env.NEXT_MOTTO;
-  const adress = process.env.NEXT_ADRESS;
+  const adress = process.env.NEXT_ADRESSE;
 
   return (
     <main className="min-h-screen flex flex-col">
